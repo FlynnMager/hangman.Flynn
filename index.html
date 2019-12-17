@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Hangman by Flynn</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="stylesheet.css">
+    <script src="script.js"></script>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body onload="makeLetters()" background="images/background.jpeg">
+
+<h1>Hangman!</h1>
+
+Category:<select id="category">
+    <option value="1">BHS Teachers</option>
+    <option value="2">Energy Drinks</option>
+    <option value="3">Fruits</option>
+</select>
+Difficulty:<select id="difficulty">
+    <option value="1">Easy</option>
+    <option value="2">Medium</option>
+    <option value="3">Hard</option>
+</select>
+<button onclick="startGame()" class="btn btn-success">Start!</button>
+<div id="guessLeft"></div>
+<img id="image">
+<div id="wordToGuess"></div>
+<div id="allTheLetters">
+
+</div>
+</body>
+</html>
